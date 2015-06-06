@@ -102,14 +102,33 @@ endif
 
 colorscheme desert
 
-" Setup warning for mutt emails length > 72
-" TODO need test for being used in mutt
-" match ErrorMsg /\%>73v.\+/
-"
-
 " Specific support for use in Mutt
 " Taken from - http://www.256bit.org/~chrisbra/cms/vim_as_e-mail_editor.html
 
 let attach_check_keywords="attached,attaching"
 
 filetype plugin on
+
+" Highlight stray tabs
+
+match errorMsg /[^\t]\zs\t\+/
+
+" Set Status bar to something useful
+" See :help 'statusline' for format options
+
+set laststatus=2
+" set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%041,%04v]\ [%p%%]\ [LEN=%L]
+
+" Highlight cursor line and column
+
+" set cursorline
+" set cursorcolumn
+
+" Check my speling
+
+set spell
+set spellsuggest=5
+
+" Abbreviations (should be in own file)
+
+source $HOME/.vim/abbreviations.vim
