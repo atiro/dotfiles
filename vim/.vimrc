@@ -110,4 +110,6 @@ colorscheme desert
 " Specific support for use in Mutt
 " Taken from - http://www.256bit.org/~chrisbra/cms/vim_as_e-mail_editor.html
 
+let attach_check_keywords="attached,attaching"
+
 filetype plugin on
