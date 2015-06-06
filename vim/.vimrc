@@ -96,3 +96,18 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
+
+
+" Set colour scheme
+
+colorscheme desert
+
+" Setup warning for mutt emails length > 72
+" TODO need test for being used in mutt
+" match ErrorMsg /\%>73v.\+/
+"
+
+" Specific support for use in Mutt
+" Taken from - http://www.256bit.org/~chrisbra/cms/vim_as_e-mail_editor.html
+
+filetype plugin on

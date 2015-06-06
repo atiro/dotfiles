@@ -1,0 +1,3 @@
+
+
+set editor='vim --cmd "let b:Signoff=\"regards,\"|let b:Name=\"Richard\""'
