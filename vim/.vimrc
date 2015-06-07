@@ -136,3 +136,16 @@ source $HOME/.vim/abbreviations.vim
 " Mappings 
 
 source $HOME/.vim/mappings.vim
+
+" Read in Templates
+"
+function! LoadTemplate(extension)
+	silent! :execute '0r $VIMHOME/templates/'. a:extension. '.tpl'
+	silent! execute 'soruce $VIMHOME/templates/'.a:extension.'.patterns.tpl'
+endfunction
+
+autocmd BufNewFile * silent! call LoadTemplate('%:e')
+
+" Setup pathogen to handle bundle
+
+execute pathogen#infect()
