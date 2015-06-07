@@ -132,3 +132,7 @@ set spellsuggest=5
 " Abbreviations (should be in own file)
 
 source $HOME/.vim/abbreviations.vim
+
+" Mappings 
+
+source $HOME/.vim/mappings.vim
