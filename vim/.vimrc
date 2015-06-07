@@ -45,7 +45,7 @@ inoremap <C-U> <C-G>u<C-U>
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
-  set mouse=a
+  set mouse=r
 endif
 
 " Switch syntax highlighting on, when the terminal has colors
@@ -98,9 +98,6 @@ if !exists(":DiffOrig")
 endif
 
 
-" Set colour scheme
-
-colorscheme BlackSea
 
 " Specific support for use in Mutt
 " Taken from - http://www.256bit.org/~chrisbra/cms/vim_as_e-mail_editor.html
@@ -181,3 +178,25 @@ set viewdir=$HOME/.vim/views
 " Set indent
 
 set smartindent
+
+" Set colour scheme
+
+colorscheme BlackSea
+
+set selectmode=mouse,key
+set mousemodel=extend
+
+set ignorecase
+set smartcase
+
+set showmatch
+
+" Tabbing
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+
+" Faster Reg Ex Engine ?
+
+set regexpengine=2
