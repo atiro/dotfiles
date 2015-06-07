@@ -152,4 +152,32 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 
 execute pathogen#infect()
 
-nmap <F8> :TagBarToggle<CR>
+" Tabbar options
+"
+nmap <F8> :TagbarToggle<CR>
+
+" Syntastic options
+" Status line seems to break?
+
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Setup dictionary for autocomplete
+
+set dictionary+=/usr/share/dict/words
+
+set complete+=k
+
+" Sessions
+
+set viewdir=$HOME/.vim/views
+
+" Set indent
+
+set smartindent
