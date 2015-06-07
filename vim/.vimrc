@@ -148,4 +148,8 @@ autocmd BufNewFile * silent! call LoadTemplate('%:e')
 
 " Setup pathogen to handle bundle
 
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+
 execute pathogen#infect()
+
+nmap <F8> :TagBarToggle<CR>
