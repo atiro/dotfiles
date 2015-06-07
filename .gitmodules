@@ -19,3 +19,9 @@
 [submodule "vim/bundle/vim-diffchanges"]
 	path = vim/bundle/vim-diffchanges
 	url = https://github.com/jmcantrell/vim-diffchanges.git
+[submodule "vim/bundle/vim-colorschemes"]
+	path = vim/bundle/vim-colorschemes
+	url = https://github.com/flazz/vim-colorschemes.git
+[submodule "vim/bundle/YouCompleteMe"]
+	path = vim/bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git

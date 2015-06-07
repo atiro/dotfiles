@@ -100,7 +100,7 @@ endif
 
 " Set colour scheme
 
-colorscheme desert
+colorscheme BlackSea
 
 " Specific support for use in Mutt
 " Taken from - http://www.256bit.org/~chrisbra/cms/vim_as_e-mail_editor.html
