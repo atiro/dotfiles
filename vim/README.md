@@ -165,3 +165,10 @@ Tabs
   :tabopen [FILE]
   :tabclose - Close current tab
   :tabonly - Close all but current tab
+
+Windows
+
+   Ctrl+ws - Split windows
+   Ctrl+ww - Switch between windows
+   Ctrl+wq - Quit a window
+   Ctrl+wv - Split windows vertically

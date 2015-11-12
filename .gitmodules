@@ -25,3 +25,6 @@
 [submodule "vim/bundle/editorconfig"]
 	path = vim/bundle/editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "vim/bundle/NERDTree"]
+	path = vim/bundle/NERDTree
+	url = https://github.com/scrooloose/nerdtree.git
