@@ -96,6 +96,11 @@ Undo merge (after further commits)
 	git cherry-pick
 
 
+Reversing a merge commit
+
+	git checkout [branch]
+	git log --graph --oneline
+	git revert --mainline 1 [commit]
 
 
 Deleting
@@ -200,3 +205,93 @@ Reverting
 If you want to revert (remove) a commit but leave the commit logged
 
 	git revert [commit]
+
+
+Branches
+========
+
+Search for branches with a commit
+
+	git branch --contains [commit]
+
+Logs/Diff
+====
+
+	git log [branch]
+
+Show diffs
+	git log --patch  [branch]
+	git diff master [branch]
+
+Simple stats diff
+
+	git diff master --stat
+
+Search for log message matching string
+
+	git log -S [string]
+
+	git log -G [regex]
+
+Blame
+=====
+
+See who edited the file
+
+Bisect
+======
+
+	git bisect start
+	git bisect good [commit]
+	git bisect bad [commit]
+
+Git will then set working directory to a commit. Verify if it is good or bad 
+state
+
+	git bisect bad
+
+	git bisect good
+
+When you have found the commit that breaks the code (note the commit id)
+
+	git bisect reset
+	git blame [filename]
+Stashing
+========
+
+Save working directory (only commited files)
+
+	git stash
+
+Save working directory (including untracked files)
+
+	git stash --include-untracked
+
+Save commited and throw away untracked
+
+	git stash 
+	git clean -d
+
+List stashes
+
+	git stash list
+
+View stash
+
+	git show stash@{0}
+
+Named stash
+
+	git stash save "quick description"
+
+Apply stash
+
+	git stash apply stash@{0}
+
+Delete stash
+
+	git stash drop stash{0}
+
+Apply & delete
+
+	git stash pop stash@{0}
