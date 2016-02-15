@@ -34,3 +34,6 @@
 [submodule "bash/bash-git-prompt"]
 	path = bash/bash-git-prompt
 	url = https://github.com/magicmonty/bash-git-prompt
+[submodule "bash/fasd"]
+	path = bash/fasd
+	url = https://github.com/clvv/fasd.git
