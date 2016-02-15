@@ -1,3 +1,9 @@
+# Install packages
+
+# ag (grep replacement) - https://github.com/ggreer/the_silver_searcher
+
+sudo apt-get install install silversearch-ag
+
 # Setup link to bash-git-prompt
 
 # Append to bashrc
