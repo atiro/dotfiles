@@ -15,3 +15,7 @@ sudo apt-get install install silversearch-ag
 cp desk/desk ~/bin
 
 desk init
+
+# Liquidprompt setup
+
+ln -s liquidprompt/liquidprompt ~/bin/liquidprompt

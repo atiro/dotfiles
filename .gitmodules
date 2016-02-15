@@ -40,3 +40,6 @@
 [submodule "bash/desk"]
 	path = bash/desk
 	url = https://github.com/jamesob/desk.git
+[submodule "bash/liquidprompt"]
+	path = bash/liquidprompt
+	url = https://github.com/nojhan/liquidprompt.git
