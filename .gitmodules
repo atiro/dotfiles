@@ -37,3 +37,6 @@
 [submodule "bash/fasd"]
 	path = bash/fasd
 	url = https://github.com/clvv/fasd.git
+[submodule "bash/desk"]
+	path = bash/desk
+	url = https://github.com/jamesob/desk.git
