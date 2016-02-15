@@ -2,7 +2,23 @@
 
 # ag (grep replacement) - https://github.com/ggreer/the_silver_searcher
 
-sudo apt-get install install silversearch-ag
+sudo apt-get install silversearch-ag
+
+# Code line counter util
+
+sudo apt-get install cloc
+
+# Virtualenv / Node
+
+sudo pip install virtualenv virtualenvwrapper
+
+mkvirtualenv default
+workon default
+
+pip install nodeenv
+
+nodeenv -p
+
 
 # Setup link to bash-git-prompt
 
