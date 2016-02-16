@@ -8,16 +8,7 @@ sudo apt-get install silversearch-ag
 
 sudo apt-get install cloc
 
-# Virtualenv / Node
 
-sudo pip install virtualenv virtualenvwrapper
-
-mkvirtualenv default
-workon default
-
-pip install nodeenv
-
-nodeenv -p
 
 
 # Setup link to bash-git-prompt
@@ -35,3 +26,29 @@ desk init
 # Liquidprompt setup
 
 ln -s liquidprompt/liquidprompt ~/bin/liquidprompt
+
+# Virtualenv / Node
+
+sudo pip install virtualenv virtualenvwrapper
+
+mkvirtualenv default
+workon default
+
+pip install nodeenv
+
+# Report on website status
+
+pip install isitup
+
+# Saws (better AWS command line tool) - https://github.com/donnemartin/saws
+
+pip install saws
+
+# Takes a long time to compile
+nodeenv -p
+
+# Now install some node stuff
+
+# Show IPs on worlkdmap in terminal (https://github.com/nogizhopaboroda/iponmap)
+
+npm install -g iponmap
