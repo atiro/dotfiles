@@ -181,7 +181,7 @@ set smartindent
 
 " Set colour scheme
 
-colorscheme BlackSea
+colorscheme hybrid
 
 set selectmode=mouse,key
 set mousemodel=extend
