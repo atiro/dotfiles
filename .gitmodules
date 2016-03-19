@@ -43,3 +43,6 @@
 [submodule "bash/liquidprompt"]
 	path = bash/liquidprompt
 	url = https://github.com/nojhan/liquidprompt.git
+[submodule "bash/powerline-shell"]
+	path = bash/powerline-shell
+	url = https://github.com/milkbikis/powerline-shell.git
