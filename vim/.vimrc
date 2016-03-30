@@ -200,3 +200,10 @@ set softtabstop=4
 " Faster Reg Ex Engine ?
 
 set regexpengine=2
+
+" Powerline
+
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+
