@@ -8,8 +8,9 @@ sudo apt-get install silversearch-ag
 
 sudo apt-get install cloc
 
+# Powerline bash/vim shell prompt
 
-
+sudo apt-get powerline fonts-powerline
 
 # Setup link to bash-git-prompt
 

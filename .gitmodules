@@ -43,6 +43,9 @@
 [submodule "bash/liquidprompt"]
 	path = bash/liquidprompt
 	url = https://github.com/nojhan/liquidprompt.git
+[submodule "bash/powerline-shell"]
+	path = bash/powerline-shell
+	url = https://github.com/milkbikis/powerline-shell.git
 [submodule "vim/bundle/vim-markdown"]
 	path = vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
