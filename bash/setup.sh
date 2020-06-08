@@ -2,7 +2,11 @@
 
 # ag (grep replacement) - https://github.com/ggreer/the_silver_searcher
 
-sudo apt-get install silversearch-ag
+sudo apt-get install silversearcher-ag 
+
+# Quick directory jumping
+
+sudo apt-get install autojump
 
 # Code line counter util
 
@@ -23,10 +27,6 @@ sudo apt-get powerline fonts-powerline
 cp desk/desk ~/bin
 
 desk init
-
-# Liquidprompt setup
-
-ln -s liquidprompt/liquidprompt ~/bin/liquidprompt
 
 # Virtualenv / Node
 

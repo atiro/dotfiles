@@ -130,7 +130,7 @@ set spellsuggest=5
 
 source $HOME/.vim/abbreviations.vim
 
-" Mappings 
+" Mappings
 
 source $HOME/.vim/mappings.vim
 
@@ -181,7 +181,8 @@ set smartindent
 
 " Set colour scheme
 
-colorscheme BlackSea
+colorscheme pencil
+set background=dark
 
 set selectmode=mouse,key
 set mousemodel=extend
@@ -203,7 +204,13 @@ set regexpengine=2
 
 " Powerline
 
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+"python from powerline.vim import setup as powerline_setup
+"python powerline_setup()
+"python del powerline_setup
 
+call plug#begin()
+Plug 'vim-syntastic/syntastic'
+Plug 'preservim/NERDTree'
+Plug 'ycm-core/YouCompleteMe'
+Plug 'majutshushi/tagbar'
+call plug#end()
