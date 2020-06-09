@@ -145,9 +145,9 @@ autocmd BufNewFile * silent! call LoadTemplate('%:e')
 
 " Setup pathogen to handle bundle
 
-runtime bundle/vim-pathogen/autoload/pathogen.vim
+"runtime bundle/vim-pathogen/autoload/pathogen.vim
 
-execute pathogen#infect()
+"execute pathogen#infect()
 
 " Tabbar options
 "
@@ -208,9 +208,12 @@ set regexpengine=2
 "python powerline_setup()
 "python del powerline_setup
 
+" New Vim packaging system 
 call plug#begin()
 Plug 'vim-syntastic/syntastic'
 Plug 'preservim/NERDTree'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'majutshushi/tagbar'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'vim-airline/vim-airline'
 call plug#end()
