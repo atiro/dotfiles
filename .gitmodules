@@ -1,29 +1,29 @@
 [submodule "vim/bundle/tagbar"]
-	path = vim/pack/bundle/start/tagbar
+	path = vim/pack/bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
 [submodule "vim/bundle/vim-tags"]
-	path = vim/pack/bundle/start/vim-tags
+	path = vim/pack/bundle/vim-tags
 	url = https://github.com/szw/vim-tags.git
 [submodule "vim/bundle/syntastic"]
-	path = vim/pack/bundle/start/syntastic
+	path = vim/pack/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
 [submodule "vim/bundle/vim-diffchanges"]
-	path = vim/pack/bundle/start/vim-diffchanges
+	path = vim/pack/bundle/vim-diffchanges
 	url = https://github.com/jmcantrell/vim-diffchanges.git
 [submodule "vim/bundle/vim-colorschemes"]
-	path = vim/pack/bundle/start/vim-colorschemes
+	path = vim/pack/bundle/vim-colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
 [submodule "vim/bundle/YouCompleteMe"]
-	path = vim/pack/bundle/start/YouCompleteMe
+	path = vim/pack/bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
 [submodule "vim/bundle/editorconfig"]
-	path = vim/pack/bundle/start/editorconfig
+	path = vim/pack/bundle/editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim.git
 [submodule "vim/bundle/NERDTree"]
-	path = vim/pack/bundle/start/NERDTree
+	path = vim/pack/bundle/NERDTree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "vim/bundle/fugitive"]
-	path = vim/pack/bundle/start/fugitive
+	path = vim/pack/bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bash/bash-git-prompt"]
 	path = bash/bash-git-prompt
