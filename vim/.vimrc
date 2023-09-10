@@ -209,11 +209,11 @@ set regexpengine=2
 "python del powerline_setup
 
 " New Vim packaging system 
-call plug#begin()
-Plug 'vim-syntastic/syntastic'
-Plug 'preservim/NERDTree'
-Plug 'ycm-core/YouCompleteMe'
-Plug 'majutshushi/tagbar'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'vim-airline/vim-airline'
-call plug#end()
+" call plug#begin()
+" Plug 'vim-syntastic/syntastic'
+" Plug 'preservim/NERDTree'
+" Plug 'ycm-core/YouCompleteMe'
+" Plug 'majutshushi/tagbar'
+" Plug 'editorconfig/editorconfig-vim'
+" Plug 'vim-airline/vim-airline'
+" call plug#end()
