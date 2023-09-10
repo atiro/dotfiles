@@ -1,35 +1,29 @@
-[submodule "vim/vim-pathogen"]
-	path = vim/vim-pathogen
-	url = https://github.com/tpope/vim-pathogen.git
 [submodule "vim/bundle/tagbar"]
-	path = vim/bundle/tagbar
+	path = vim/pack/bundle/start/tagbar
 	url = https://github.com/majutsushi/tagbar.git
-[submodule "vim/bundle/vim-pathogen"]
-	path = vim/bundle/vim-pathogen
-	url = https://github.com/tpope/vim-pathogen.git
 [submodule "vim/bundle/vim-tags"]
-	path = vim/bundle/vim-tags
+	path = vim/pack/bundle/start/vim-tags
 	url = https://github.com/szw/vim-tags.git
 [submodule "vim/bundle/syntastic"]
-	path = vim/bundle/syntastic
+	path = vim/pack/bundle/start/syntastic
 	url = https://github.com/scrooloose/syntastic.git
 [submodule "vim/bundle/vim-diffchanges"]
-	path = vim/bundle/vim-diffchanges
+	path = vim/pack/bundle/start/vim-diffchanges
 	url = https://github.com/jmcantrell/vim-diffchanges.git
 [submodule "vim/bundle/vim-colorschemes"]
-	path = vim/bundle/vim-colorschemes
+	path = vim/pack/bundle/start/vim-colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
 [submodule "vim/bundle/YouCompleteMe"]
-	path = vim/bundle/YouCompleteMe
+	path = vim/pack/bundle/start/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
 [submodule "vim/bundle/editorconfig"]
-	path = vim/bundle/editorconfig
+	path = vim/pack/bundle/start/editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim.git
 [submodule "vim/bundle/NERDTree"]
-	path = vim/bundle/NERDTree
+	path = vim/pack/bundle/start/NERDTree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "vim/bundle/fugitive"]
-	path = vim/bundle/fugitive
+	path = vim/pack/bundle/start/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bash/bash-git-prompt"]
 	path = bash/bash-git-prompt
@@ -47,5 +41,5 @@
 	path = bash/powerline-shell
 	url = https://github.com/milkbikis/powerline-shell.git
 [submodule "vim/bundle/vim-markdown"]
-	path = vim/bundle/vim-markdown
+	path = vim/pack/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
