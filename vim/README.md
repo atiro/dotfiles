@@ -1,8 +1,65 @@
+Ubuntu packages
+
+  23.04 - vim-nox, vim-rails, exuberant-ctags
+
 Vim Config
 
 	Stolen from the best! (github/hjep/dotfiles, github/argaen/.vim)
 
 	Add some setup info here...
+
+## New notes (2023
+
+Use :helptags ALL to generate help for plugs
+
+Use :packadd [name] for enabling a package installed as optional (~/.vim/pack/bundle/opt)
+
+See run time path (RTP) - :set rtp?
+
+### Minpac
+
+Update minpac plugins
+
+  :call minpac#update()
+
+Uninstall plugins
+
+  Remove it from the .vimrc
+  Source % / Re-read .vimrc
+  :call minpack#clean()
+
+### Navigating Ruby
+
+']m' moves forward through Ruby function defintions in a class/model/controller
+'[m' moves backwards
+'f(' jump to opening param on current line
+']M' Jump to end of current method definition (then use 'O' to open a new line before end)
+'[M' Jump to end of previous current method definition (then use 'O' to open a new line before end)
+']]' Jump between module def
+'}}' Previous class/module def
+
+% jump between start/end of matching module/class/def/if
+
+vim - Select inside current method
+vam - Select around current method
+vir - Select inside rubyblock
+var - Select around rubyblock
+
+cir - Change text inside ruby block
+dam - Delete around method
+
+### Nagicating Rails
+
+Using 'A' and 'R'
+
+Current file            Alternate file          Related file
+model                   unit test               schema definition
+controller (in method)  functional test         template (view)
+template (view)         functional test         controller (jump to method)
+migration               previous migration      next migration
+database.yml            database.example.yml    environments/*.rb
+
+## Old notes (from ...)
 
 Notes on Common and Uncommon Commands
 
@@ -172,3 +229,5 @@ Windows
    Ctrl+ww - Switch between windows
    Ctrl+wq - Quit a window
    Ctrl+wv - Split windows vertically
+
+

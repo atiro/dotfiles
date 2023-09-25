@@ -71,6 +71,11 @@ if has("autocmd")
   " For all text files set 'textwidth' to 78 characters.
   autocmd FileType text setlocal textwidth=78
 
+  " For Ruby/Rails/Python files always show line numbers
+  autocmd FileType ruby,python setlocal number
+  " For Ruby always open with the tabr sidebar panel
+  autocmd FileType ruby TagbarOpen
+
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
   " (happens when dropping a file on gvim).
@@ -94,7 +99,7 @@ endif " has("autocmd")
 " Only define it when not defined already.
 if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
+    \ | wincmd p | diffthis
 endif
 
 
@@ -137,17 +142,11 @@ source $HOME/.vim/mappings.vim
 " Read in Templates
 "
 function! LoadTemplate(extension)
-	silent! :execute '0r $VIMHOME/templates/'. a:extension. '.tpl'
-	silent! execute 'soruce $VIMHOME/templates/'.a:extension.'.patterns.tpl'
+  silent! :execute '0r $VIMHOME/templates/'. a:extension. '.tpl'
+  silent! execute 'soruce $VIMHOME/templates/'.a:extension.'.patterns.tpl'
 endfunction
 
 autocmd BufNewFile * silent! call LoadTemplate('%:e')
-
-" Setup pathogen to handle bundle
-
-"runtime bundle/vim-pathogen/autoload/pathogen.vim
-
-"execute pathogen#infect()
 
 " Tabbar options
 "
@@ -181,8 +180,9 @@ set smartindent
 
 " Set colour scheme
 
-colorscheme pencil
+colorscheme slate
 set background=dark
+
 
 set selectmode=mouse,key
 set mousemodel=extend
@@ -202,18 +202,12 @@ set softtabstop=4
 
 set regexpengine=2
 
-" Powerline
+set packpath^=~/.vim
+packadd minpac
+call minpac#init()
 
-"python from powerline.vim import setup as powerline_setup
-"python powerline_setup()
-"python del powerline_setup
+call minpac#add('tpope/vim-surround', {'type': 'opt'})
+call minpac#add('tpope/vim-rails')
+call minpac#add('k-takata/minpac', {'type': 'opt'})
 
-" New Vim packaging system 
-" call plug#begin()
-" Plug 'vim-syntastic/syntastic'
-" Plug 'preservim/NERDTree'
-" Plug 'ycm-core/YouCompleteMe'
-" Plug 'majutshushi/tagbar'
-" Plug 'editorconfig/editorconfig-vim'
-" Plug 'vim-airline/vim-airline'
-" call plug#end()
+runtime macros/matchit.vim

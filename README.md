@@ -10,4 +10,7 @@ Packages Needed
 ## Bash
 
   - autojump
-  - desk
+  - desk - https://github.com/jamesob/desk
+  - powerline
+
+

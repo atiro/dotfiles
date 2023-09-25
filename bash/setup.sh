@@ -43,10 +43,10 @@ pip install isitup
 
 # Saws (better AWS command line tool) - https://github.com/donnemartin/saws
 
-pip install saws
+#pip install saws
 
 # Takes a long time to compile
-nodeenv -p
+#nodeenv -p
 
 # Now install some node stuff
 

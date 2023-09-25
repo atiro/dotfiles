@@ -133,9 +133,12 @@ POWERLINE_BASH_SELECT=1
 
 GPG_TTY=$(tty)
 export GPG_TTY
-# Hook for desk activation
-[ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
 
-workon default
+# Hook for desk activation
+#[ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
+#workon default
 
 alias glog='git log --pretty=format:"%h%x09%an%x09%ad%x09%s"'
+
+# Setup virtualenv wrapper
+. /usr/share/virtualenvwrapper/virtualenvwrapper.sh
